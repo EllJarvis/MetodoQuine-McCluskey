@@ -1,0 +1,24 @@
+.n-toggle {
+    width: 100%;
+    border: #e9e7e7 solid;
+    background-color: rgb(40, 91, 201);
+    border-radius: 2em;
+}
+
+.n-toggle > .toggle-elem {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.n-toggle > .toggle-elem.active {
+    background-color: #4ff824b4;
+}
+
+.n-toggle > .toggle-elem:first-child {
+    border-radius: 2em 0 0 2em;
+}
+
+.n-toggle > .toggle-elem:last-child {
+    border-radius: 0 2em 2em 0;
+}

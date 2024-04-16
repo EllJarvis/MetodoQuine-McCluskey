@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <!-- Título de tu proyecto -->
+  <title>Estudio general del sistema</title>
+
+  <meta name="Description" content="Estudio General del Sistema" /> <!--Descripción del tutorial-->
+  <meta name="Keywords" content="Factores, Estudio, General, Sistema" /> <!--Palabras clave-->
+  <meta name="robots" content="noindex, nofollow" />
+
+  <script src="media/js/jq.js" type="text/javascript"></script>
+  <script src="media/js/m.js" type="text/javascript"></script>
+  <script src="media/js/ui.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="media/css/ui.css" type="text/css" />
+
+  <!-- El siguiente CSS puede utilizarse para hacer los ajustes necesarios de los contenidos -->
+  <style>
+    body {
+      margin: 0;
+      font-size: 14px; /* Ajustar el tamaño del texto */
+      line-height: 1.3;
+    }
+
+    .cuadro {
+      width: 90%;
+      max-width: 800px;
+      margin: 15px auto; /* Separación superior e inferior del cuadro */
+      padding: 20px;
+      background-color: #000;
+      border: 1px solid #fff;
+      box-sizing: border-box;
+    }
+
+    summary {
+      font-size: 1.5em;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .contenido-seccion {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .contenido-visible {
+      display: block;
+    }
+
+    details {
+      max-width: 100%;
+    }
+    
+    ol {
+      margin: 0;
+      padding: 0;
+      font-size: 1.0em;
+    }
+
+    li {
+      list-style-type: none;
+      margin-bottom: 1em;
+    }
+
+    p {
+      font-size: 1.7em;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1.6em;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .texto-negritas {
+      font-weight: bold;
+      font-size: 4.5em; /* Puedes ajustar el tamaño según tus preferencias */
+    }
+
+    .botones-container {
+      text-align: center;
+    }
+
+    .botones-container button {
+      margin: 10px;
+      padding: 15px; /* Aumenta el tamaño del padding para hacer los botones más grandes */
+      font-size: 1.5em; /* Aumenta el tamaño de la fuente */
+    }
+  </style>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Documento HTML con Índice Interactivo</title>
+</head>
+
+<body>
+  <div class="cuadro">
+    <div id="seccion1" class="contenido-seccion contenido-visible">
+      <div id="pasos">
+        <!-- Contenido de los pasos de la sección 1 se mostrará aquí -->
+      </div>
+      <div class="botones-container botones-seccion1">
+        <!-- Botones de Anterior y Siguiente solo para la sección 1 -->
+        <p>Ejemplo 1</p>
+        <p>Da clic para cambiar al siguiente o anterior paso</p>
+        <button onclick="mostrarPaso('anterior')">Anterior</button>
+        <button onclick="mostrarPaso('siguiente')">Siguiente</button>
+      </div>
+    </div>
+
+    <div id="seccion2" class="contenido-seccion">
+      <div id="pasos2">
+        <!-- Contenido de los pasos de la sección 2 se mostrará aquí -->
+      </div>
+      <div class="botones-container botones-seccion2">
+        <!-- Botones de Anterior y Siguiente solo para la sección 2 -->
+        <p>Ejemplo 2</p>
+        <p>Da clic para cambiar al siguiente o anterior paso</p>
+        <button onclick="mostrarPaso2('anterior')">Anterior</button>
+        <button onclick="mostrarPaso2('siguiente')">Siguiente</button>
+      </div>
+    </div>
+
+    <div id="seccion3" class="contenido-seccion">
+      <div id="pasos3">
+        <!-- Contenido de los pasos de la sección 2 se mostrará aquí -->
+      </div>
+      <div class="botones-container botones-seccion3">
+        <!-- Botones de Anterior y Siguiente solo para la sección 2 -->
+        <p>Ejemplo 3</p>
+        <p>Da clic para cambiar al siguiente o anterior paso</p>
+        <button onclick="mostrarPaso3('anterior')">Anterior</button>
+        <button onclick="mostrarPaso3('siguiente')">Siguiente</button>
+      </div>
+    </div>
+
+    <div id="seccion4" class="contenido-seccion">
+      <div id="pasos4">
+        <!-- Contenido de los pasos de la sección 2 se mostrará aquí -->
+      </div>
+      <div class="botones-container botones-seccion4">
+        <!-- Botones de Anterior y Siguiente solo para la sección 2 -->
+        <p>Ejemplo 4</p>
+        <p>Da clic para cambiar al siguiente o anterior paso</p>
+        <button onclick="mostrarPaso4('anterior')">Anterior</button>
+        <button onclick="mostrarPaso4('siguiente')">Siguiente</button>
+      </div>
+    </div>
+
+    <div id="seccion5" class="contenido-seccion">
+      <div id="pasos5">
+        <!-- Contenido de los pasos de la sección 2 se mostrará aquí -->
+      </div>
+      <div class="botones-container botones-seccion5">
+        <!-- Botones de Anterior y Siguiente solo para la sección 2 -->
+        <p>Ejemplo 5</p>
+        <p>Da clic para cambiar al siguiente o anterior paso</p>
+        <button onclick="mostrarPaso5('anterior')">Anterior</button>
+        <button onclick="mostrarPaso5('siguiente')">Siguiente</button>
+      </div>
+    </div>
+
+    <div id="seccion6" class="contenido-seccion">
+      <div id="pasos6">
+        <!-- Contenido de los pasos de la sección 2 se mostrará aquí -->
+      </div>
+      <div class="botones-container botones-seccion6">
+        <!-- Botones de Anterior y Siguiente solo para la sección 2 -->
+        <p>Ejemplo 6</p>
+        <p>Da clic para cambiar al siguiente o anterior paso</p>
+        <button onclick="mostrarPaso6('anterior')">Anterior</button>
+        <button onclick="mostrarPaso6('siguiente')">Siguiente</button>
+      </div>
+    </div>
+
+    <div id="seccion7" class="contenido-seccion">
+      <div id="pasos7">
+        <!-- Contenido de los pasos de la sección 2 se mostrará aquí -->
+      </div>
+      <div class="botones-container botones-seccion7">
+        <!-- Botones de Anterior y Siguiente solo para la sección 2 -->
+        <p>Ejemplo 7</p>
+        <p>Da clic para cambiar al siguiente o anterior paso</p>
+        <button onclick="mostrarPaso7('anterior')">Anterior</button>
+        <button onclick="mostrarPaso7('siguiente')">Siguiente</button>
+      </div>
+    </div>
+
+    <div id="seccion8" class="contenido-seccion">
+      <div id="pasos8">
+        <!-- Contenido de los pasos de la sección 2 se mostrará aquí -->
+      </div>
+      <div class="botones-container botones-seccion8">
+        <!-- Botones de Anterior y Siguiente solo para la sección 2 -->
+        <p>Ejemplo 8</p>
+        <p>Da clic para cambiar al siguiente o anterior paso</p>
+        <button onclick="mostrarPaso8('anterior')">Anterior</button>
+        <button onclick="mostrarPaso8('siguiente')">Siguiente</button>
+      </div>
+    </div>
+
+    <div id="seccion9" class="contenido-seccion">
+      <div id="pasos9">
+        <!-- Contenido de los pasos de la sección 2 se mostrará aquí -->
+      </div>
+      <div class="botones-container botones-seccion9">
+        <!-- Botones de Anterior y Siguiente solo para la sección 2 -->
+        <p>Ejemplo 9</p>
+        <p>Da clic para cambiar al siguiente o anterior paso</p>
+        <button onclick="mostrarPaso9('anterior')">Anterior</button>
+        <button onclick="mostrarPaso9('siguiente')">Siguiente</button>
+      </div>
+    </div>
+
+    <div id="seccion10" class="contenido-seccion">
+      <div id="pasos10">
+        <!-- Contenido de los pasos de la sección 2 se mostrará aquí -->
+      </div>
+      <div class="botones-container botones-seccion10">
+        <!-- Botones de Anterior y Siguiente solo para la sección 2 -->
+        <p>Ejemplo 10</p>
+        <p>Da clic para cambiar al siguiente o anterior paso</p>
+        <button onclick="mostrarPaso10('anterior')">Anterior</button>
+        <button onclick="mostrarPaso10('siguiente')">Siguiente</button> 
+      </div>
+    </div>
+    
+</div>
+
+<div class="botones-container">
+  <!-- Botones de Anterior y Siguiente para todas las secciones -->
+  <p>Da clic para cambiar de ejemplos</p>
+  <button onclick="mostrarSeccion('anterior')">Anterior</button>
+  <button onclick="mostrarSeccion('siguiente')">Siguiente</button>
+</div>
+</div>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const enlacesIndice = document.querySelectorAll('.enlace-indice');
+      const seccionesContenido = document.querySelectorAll('.contenido-seccion');
+
+      enlacesIndice.forEach(function (enlace) {
+        enlace.addEventListener('click', function (event) {
+          event.preventDefault();
+          const objetivo = this.getAttribute('href').substring(1);
+
+          seccionesContenido.forEach(function (seccion) {
+            seccion.classList.remove('contenido-visible');
+          });
+
+          document.getElementById(objetivo).classList.add('contenido-visible');
+        });
+      });
+    });
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      const pasosContenidoSeccion1 = [
+        '<p class="texto-negritas">Ejemplo 1</p>' +
+        '<p>Minimice la siguiente función booleana por medio del método de minimización de Quine-McCluskey.</p>'+
+        '<p>f(a,b,c,d)= ∑<sub>m</sub>(0,2,4,5,6,8)</p>'+
+        '<p>Solución:<p>'+ 
+        '<p class="texto-negritas">Paso No.1</p>'+
+        '<p>1)	Generamos la primera tabla. Objetivo: Obtener las formas binarias de los minitérminos y la cantidad de 1’s en ellos.</p>'+
+        '<img id="tabla1" src="images/Ejemplo1/tabla1_ejemplo1.png" >' +
+        '<div class="cuadro">' +
+        '<p>Marcamos con un * en la Tabla 1, para indicar que hemos agregado los minitérminos en la Tabla 2.' +
+        '</div>', 
+
+        '<p class="texto-negritas">Paso No.2</p>'+  
+        '<p> Generamos la segunda tabla.</p>'+
+        '<p> Objetivo: Reagrupar a los minitérminos con base en la cantidad de 1’s en su representación binaria.</p>'+
+        '<img id="tabla2" src="images/Ejemplo1/tabla2_1_ejemplo1.png" >'+
+        '<img id="tabla3" src="images/Ejemplo1/tabla2_2_ejemplo1.png" >'+
+        '<img id="tabla4" src="images/Ejemplo1/tabla2_3_ejemplo1.png" >'+
+        '<img id="tabla5" src="images/Ejemplo1/tabla2_4_ejemplo1.png" >'+
+        '<img id="tabla6" src="images/Ejemplo1/tabla2_5_ejemplo1.png" >'+
+        '<img id="tabla7" src="images/Ejemplo1/tabla2_6_ejemplo1.png" >',
+        
+        '<p class="texto-negritas">Paso No.3</p>'+
+        '<p> Generamos una tercera tabla. Objetivo: Realizar la primera combinación con minitérminos.</p>' +
+        '<p> **Pasamos a la parte de realización de combinaciones con los minitérminos.</p>'+
+        '<p class="texto-negritas">Combinaciones</p>'+
+        '<p>1.	Buscamos en la representación binaria de los minitérminos, los que difieren en solo una variable (la que sea) para poder realizar una combinación con apoyo en la tabla 2.</p>'+
+        '<p>2.	Empezamos con el primer caso en la cantidad de 1’s con la siguiente cantidad. En este caso los que tienen cero 1’s con los que tiene un solo 1.</p>'+
+        '<p>3.	Al combinar a los minitérminos, si tenemos:</p>'+
+        '<p>0 y 0 será 0</p>'+
+        '<p>1 y 1 será 1</p>'+
+        '<p> 0 y 1 será -</p>'+
+        '<img id="tabla8" src="images/Ejemplo1/ex1_ejemplo1.png" >'+
+        '<p>Ahora seguiremos con la creación de la tabla</p>'+
+        '<img id="tabla9" src="images/Ejemplo1/tabla3_1_ejemplo1.png" >'+
+        '<img id="tabla10" src="images/Ejemplo1/tabla3_2_ejemplo1.png" >'+
+        '<img id="tabla11" src="images/Ejemplo1/tabla3_3_ejemplo1.png" >'+
+        '<img id="tabla12" src="images/Ejemplo1/tabla3_4_ejemplo1.png" >'+
+        '<img id="tabla13" src="images/Ejemplo1/tabla3_5_ejemplo1.png" >',
+
+        '<p class="texto-negritas">Paso No.4</p>'+
+        '<p>4)	Generamos una cuarta tabla. </p>'+
+        '<p>Objetivo: Realizar la segunda combinación con las combinaciones de la tabla anterior.</p>'+
+        '<img id="tabla14" src="images/Ejemplo1/ex2_ejemplo1.png" >'+
+        '<img id="tabla15" src="images/Ejemplo1/tabla4_ejemplo1.png" >',
+
+        '<p class="texto-negritas">Paso No.5</p>'+
+        '<p>Generamos la tabla 5. Objetivo: Colocar a los implicantes primos (combinaciones que ya no pueden ser combinadas con otras; se denotan por no tener una marca * en las tablas 3 y 4), en una sola tabla para obtener a los productos.</p>'+
+        '<img id="tabla14" src="images/Ejemplo1/tabla5_ejemplo1.png" >'+
+        '<p class="texto-negritas">Nota</p>'+
+        '<p>Si en la representación binaria (abcd) tenemos para el producto:</p>'+
+        '<p>- no hay variable representativa</p>'+
+        '<p>0 la variable está negada</p>'+
+        '<p>1 la variable no está negada</p>'+
+        '<div class="cuadro">' +
+        '<p>FINALMENTE OBTENEMOS LA MINIMIZACIÓN DADA POR LA SUMA DE LOS PRODUCTOS, resultado que podemos representar como:' +
+          '<p>f(a,b,c,d) = ∑_m(0,2,4,5,6,8) = a\'d\' + b\'c\'d\' + a\'bc\'</p>'+
+        '<p>O simplemente:</p>'+
+        '<p>f(a,b,c,d) = a\'d\'+b\'c\'d\'+a\'bc\' </p>'+
+        '</div>'
+        ];
+
+      const pasosContenidoSeccion2 = [
+        '<p class="texto-negritas">Ejemplo 2</p>' +
+        '<p>Minimice la siguiente función booleana por medio del método de minimización de Quine-McCluskey.</p>'+
+        '<p>f(a,b,c,d)= ∑<sub>m</sub>(1,3,9,11)</p>'+
+        '<p>Solución:</p>'+
+        '<p class="texto-negritas">Paso No. 1</p>' +
+        '<p>1)	Generamos la primera tabla. Objetivo: Obtener las formas binarias de los minitérminos y la cantidad de 1’s en ellos.</p>'+
+        '<img id="tabla15" src="images/Ejemplo2/tabla1_ejemplo2.png" >'+
+        '<div class="cuadro">' +
+        '<p>•	Columna minitérminos: llenamos conforme a los minitérminos que nos muestra la función en este caso: 1, 3, 9, 11.</p>' +
+        '<p>•	Columna 1´s: es el número de 1´s que contiene el número binario de ese minitérmino</p>' +
+        '<p>•	abcd: el número binario que representa ese minitérmino </p>' +
+        '</div>',
+
+        '<p class="texto-negritas">Paso No.2 </p>' +
+        '<p>Generamos la segunda tabla. </p>'+
+        '<p>Objetivo: Reagrupar a los minitérminos con base en la cantidad de 1’s en su representación binaria.</p>'+
+        '<img id="tabla15" src="images/Ejemplo2/tabla2_1_ejemplo2.png" >'+
+        '<p>Marcamos con un * en la Tabla 1, para indicar que hemos agregado los minitérminos en la Tabla 2.</p>'+
+        '<img id="tabla16" src="images/Ejemplo2/tabla2_2_ejemplo2.png" >'+
+        '<img id="tabla17" src="images/Ejemplo2/tabla2_3_ejemplo2.png" >'+
+        '<img id="tabla18" src="images/Ejemplo2/tabla2_4_ejemplo2.png" >',
+
+        '<p class="texto-negritas">Paso No.3 </p>' +
+        '<p>Generamos una tercera tabla. Objetivo: Realizar la primera combinación con minitérminos. </p>'+
+        '<p>**Pasamos a la parte de realización de combinaciones con los minitérminos.</p>'+
+        '<p>Combinacones:</p>'+
+        '<p>1.	Buscamos en la representación binaria de los minitérminos, los que difieren en solo una variable (la que sea) para poder realizar una combinación con apoyo en la tabla 2.</p>'+
+        '<p>2.	Empezamos con el primer caso en la cantidad de 1’s con la siguiente cantidad. En este caso los que tienen cero 1’s con los que tiene un solo 1.</p>'+
+        '<p>3.	Al combinar a los minitérminos, si tenemos:</p>'+
+        '<p>0 y 0 será 0</p>'+
+        '<p>1 y 1 será 1</p>'+
+        '<p>0 y 1 será -</p>'+
+        '<img id="tabla19" src="images/Ejemplo2/ex1_ejemplo2.png" >'+
+        '<p>Y seguimos con la tabla 3<p>'+
+        '<img id="tabla20" src="images/Ejemplo2/tabla3_1_ejemplo2.png" >'+
+        '<img id="tabla21" src="images/Ejemplo2/tabla3_2_ejemplo2.png" >'+
+        '<img id="tabla22" src="images/Ejemplo2/tabla3_3_ejemplo2.png" >',
+
+        '<p class="texto-negritas">Paso No.4 </p>' +
+        '<p>Generamos una cuarta tabla. Objetivo: Realizar la segunda combinación con las combinaciones de la tabla anterior.</p>'+
+        '<img id="tabla23" src="images/Ejemplo2/ex2_ejemplo2.png" >'+
+        '<p>Seguimos  con la tabla 4</p>'+
+        '<img id="tabla23" src="images/Ejemplo2/tabla4_ejemplo2.png" >'+
+        '<p>Marcamos con un * para las combinaciones (1,3), (9,11) que se están combinando por el ejemplo visto arriba. Sin embargo, vemos que al combinar (1,9) y (3,11) obtenemos -0-1 igual que la primera combinación mencionada. Por lo tanto, las marcamos también.</p>',
+        
+        '<p class="texto-negritas">Paso No.5 </p>' +
+        '<p>Generamos la tabla 5. </p>'+
+        '<p>Objetivo: Colocar a los implicantes primos (combinaciones que ya no pueden ser combinadas con otras; se denotan por no tener una marca * en las tablas 3 y 4), en una sola tabla para obtener a los productos.</p>'+
+        '<img id="tabla24" src="images/Ejemplo2/tabla5_ejemplo2.png" >'+
+        '<p>NOTA: Si en la representación binaria (abcd) tenemos para el producto:</p>'+
+        '<p>- no hay variable representativa</p>'+
+        '<p>0 la variable está negada</p>'+
+        '<p>1 la variable no está negada</p>'+
+
+        '<div class="cuadro">' +
+        '<p>FINALMENTE OBTENEMOS LA MINIMIZACIÓN DADA POR LA SUMA DE LOS PRODUCTOS, resultado que podemos representar como:</p>' +
+        '<p>f(a,b,c,d) = ∑_m(1,3,9,11) = b\'d</p>' +
+        '<p>O simplemente: </p>' +
+        '<p>f(a,b,c,d) = b\'d</p>'+
+        '</div>'
+      ];
+      
+      const pasosContenidoSeccion3 = [
+      '<p class="texto-negritas">Ejemplo 3</p>' +
+      '<p>Minimice la siguiente función booleana por medio del método de minimización de Quine-McCluskey.</p>'+
+        '<p>f(a,b,c,d)= ∑<sub>m</sub>(0,1,4,5,11,15)</p>'+
+        '<p>Solución:</p>'+
+        '<p class="texto-negritas">Paso No. 1</p>' +
+        '<p>Generamos la primera tabla. Objetivo: Obtener las formas binarias de los minitérminos y la cantidad de 1’s en ellos.</p>'+
+        '<img id="tabla25" src="images/Ejemplo3/tabla1_ejemplo3.png" >'+
+        '<div class="cuadro">' +
+        '<p>• Columna minitérminos: llenamos conforme a los minitérminos que nos muestra la función en este caso: 0, 1, 4, 5, 11, 15..</p>' +
+        '<p>•	Columna 1´s: es el número de 1´s que contiene el número binario de ese minitérmino</p>' +
+        '<p>•	abcd: el número binario que representa ese minitérmino  </p>' +
+        '</div>',
+
+        '<p class="texto-negritas">Paso No.2 </p>' +
+        '<p>Generamos la segunda tabla. </p>'+
+        '<p>Objetivo: Reagrupar a los minitérminos con base en la cantidad de 1’s en su representación binaria.</p>'+
+        '<img id="tabla26" src="images/Ejemplo3/tabla2_1_ejemplo3.png" >'+
+        '<p>Marcamos con un * en la Tabla 1, para indicar que hemos agregado los minitérminos en la Tabla 2.</p>'+
+        '<img id="tabla27" src="images/Ejemplo3/tabla2_2_ejemplo3.png" >'+
+        '<img id="tabla28" src="images/Ejemplo3/tabla2_3_ejemplo3.png" >'+
+        '<img id="tabla29" src="images/Ejemplo3/tabla2_4_ejemplo3.png" >'+
+        '<img id="tabla30" src="images/Ejemplo3/tabla2_5_ejemplo3.png" >'+
+        '<img id="tabla31" src="images/Ejemplo3/tabla2_6_ejemplo3.png" >',
+
+        '<p class="texto-negritas">Paso No.3 </p>' +
+        '<p>Generamos una tercera tabla. Objetivo: Realizar la primera combinación con minitérminos. </p>'+
+        '<p>**Pasamos a la parte de realización de combinaciones con los minitérminos.</p>'+
+        '<p>Combinaciones:</p>'+
+        '<p>1.	Buscamos en la representación binaria de los minitérminos, los que difieren en solo una variable (la que sea) para poder realizar una combinación con apoyo en la tabla 2.</p>'+
+        '<p>2.	Empezamos con el primer caso en la cantidad de 1’s con la siguiente cantidad. En este caso los que tienen cero 1’s con los que tiene un solo 1.</p>'+
+        '<p>3.	Al combinar a los minitérminos, si tenemos:</p>'+
+        '<p>0 y 0 será 0</p>'+
+        '<p>1 y 1 será 1</p>'+
+        '<p>0 y 1 será -</p>'+
+        '<img id="tabla32" src="images/Ejemplo3/ex1_ejemplo3.png" >'+
+        '<p>Seguimos con la tabla 3<p>'+
+        '<img id="tabla33" src="images/Ejemplo3/tabla3_1_ejemplo3.png" >'+
+        '<img id="tabla34" src="images/Ejemplo3/tabla3_2_ejemplo3.png" >'+
+        '<img id="tabla35" src="images/Ejemplo3/tabla3_3_ejemplo3.png" >'+
+        '<img id="tabla36" src="images/Ejemplo3/tabla3_4_ejemplo3.png" >',
+
+        '<p class="texto-negritas">Paso No.4 </p>' +
+        '<p>Generamos una cuarta tabla. Objetivo: Realizar la segunda combinación con las combinaciones de la tabla anterior.</p>'+
+        '<img id="tabla37" src="images/Ejemplo3/ex2_ejemplo3.png" >'+
+        '<p>Seguimos  con la tabla 4</p>'+
+        '<img id="tabla38" src="images/Ejemplo3/tabla4_ejemplo3.png" >'+
+        '<p>Marcamos con un * para las combinaciones (0,1) y (4,5); y también a la (0,4) por estar implicada en la combinación de combinaciones (0,1,4,5). Dejándonos con (11,15) como combinación implicante primo.</p>',
+        
+        '<p class="texto-negritas">Paso No.5 </p>' +
+        '<p>Generamos la tabla 5. </p>'+
+        '<p>Objetivo: Colocar a los implicantes primos (combinaciones que ya no pueden ser combinadas con otras; se denotan por no tener una marca * en las tablas 3 y 4), en una sola tabla para obtener a los productos.</p>'+
+        '<img id="tabla39" src="images/Ejemplo3/tabla5_ejemplo3.png" >'+
+        '<p>NOTA: Si en la representación binaria (abcd) tenemos para el producto:</p>'+
+        '<p>- no hay variable representativa</p>'+
+        '<p>0 la variable está negada</p>'+
+        '<p>1 la variable no está negada</p>'+
+
+        '<div class="cuadro">' +
+        '<p>FINALMENTE OBTENEMOS LA MINIMIZACIÓN DADA POR LA SUMA DE LOS PRODUCTOS, resultado que podemos representar como:</p>' +
+        '<p>f(a,b,c,d) = ∑_m(0,1,4,5,11,15) = a\'c\'+acd</p>' +
+        '<p>O simplemente: </p>' +
+        '<p>f(a,b,c,d) = a\'c\'+acd</p>'+
+        '</div>'
+
+      ];
+        
+      const pasosContenidoSeccion4 = [
+      '<p class="texto-negritas">Ejemplo 4</p>' +
+      '<p>Minimice la siguiente función booleana por medio del método de minimización de Quine-McCluskey.</p>'+
+        '<p>f(a,b,c,d)= ∑<sub>m</sub>(0,2,4,6,8,11,15)</p>'+
+        '<p>Solución:</p>'+
+        '<p class="texto-negritas">Paso No. 1</p>' +
+        '<p>Generamos la primera tabla. Objetivo: Obtener las formas binarias de los minitérminos y la cantidad de 1’s en ellos.</p>'+
+        '<img id="tabla40" src="images/Ejemplo4/tabla1_ejemplo4.png" >'+
+        '<div class="cuadro">' +
+        '<p>•	Columna minitérminos: llenamos conforme a los minitérminos que nos muestra la función en este caso: 0, 2, 4, 5, 6, 8, 11 y 15.</p>' +
+        '<p>•	Columna 1´s: es el número de 1´s que contiene el número binario de ese minitérmino</p>' +
+        '<p>•	abcd: el número binario que representa ese minitérmino  </p>' +
+        '</div>',
+
+        '<p class="texto-negritas">Paso No.2 </p>' +
+        '<p>Generamos la segunda tabla. </p>'+
+        '<p>Objetivo: Reagrupar a los minitérminos con base en la cantidad de 1’s en su representación binaria.</p>'+
+        '<img id="tabla41" src="images/Ejemplo4/tabla2_1_ejemplo4.png" >'+
+        '<p>Marcamos con un * en la Tabla 1, para indicar que hemos agregado los minitérminos en la Tabla 2.</p>'+
+        '<img id="tabla42" src="images/Ejemplo4/tabla2_2_ejemplo4.png" >'+
+        '<img id="tabla43" src="images/Ejemplo4/tabla2_3_ejemplo4.png" >'+
+        '<img id="tabla44" src="images/Ejemplo4/tabla2_4_ejemplo4.png" >'+
+        '<img id="tabla45" src="images/Ejemplo4/tabla2_5_ejemplo4.png" >'+
+        '<img id="tabla46" src="images/Ejemplo4/tabla2_6_ejemplo4.png" >'+
+        '<img id="tabla47" src="images/Ejemplo4/tabla2_7_ejemplo4.png" >',
+
+        '<p class="texto-negritas">Paso No.3 </p>' +
+        '<p>Generamos una tercera tabla. Objetivo: Realizar la primera combinación con minitérminos. </p>'+
+        '<p>**Pasamos a la parte de realización de combinaciones con los minitérminos.</p>'+
+        '<p>Combinaciones:</p>'+
+        '<p>1.	Buscamos en la representación binaria de los minitérminos, los que difieren en solo una variable (la que sea) para poder realizar una combinación con apoyo en la tabla 2.</p>'+
+        '<p>2.	Empezamos con el primer caso en la cantidad de 1’s con la siguiente cantidad. En este caso los que tienen cero 1’s con los que tiene un solo 1.</p>'+
+        '<p>3.	Al combinar a los minitérminos, si tenemos:</p>'+
+        '<p>0 y 0 será 0</p>'+
+        '<p>1 y 1 será 1</p>'+
+        '<p>0 y 1 será -</p>'+
+        '<img id="tabla48" src="images/Ejemplo4/ex1_ejemplo4.png" >'+
+        '<p>Seguimos con la tabla 3<p>'+
+        '<img id="tabla49" src="images/Ejemplo4/tabla3_1_ejemplo4.png" >'+
+        '<img id="tabla50" src="images/Ejemplo4/tabla3_2_ejemplo4.png" >'+
+        '<img id="tabla51" src="images/Ejemplo4/tabla3_3_ejemplo4.png" >'+
+        '<img id="tabla52" src="images/Ejemplo4/tabla3_4_ejemplo4.png" >'+
+        '<img id="tabla53" src="images/Ejemplo4/tabla3_5_ejemplo4.png" >'+
+        '<img id="tabla54" src="images/Ejemplo4/tabla3_6_ejemplo4.png" >',
+
+        '<p class="texto-negritas">Paso No.4 </p>' +
+        '<p>Generamos una cuarta tabla. Objetivo: Realizar la segunda combinación con las combinaciones de la tabla anterior.</p>'+
+        '<img id="tabla55" src="images/Ejemplo4/ex2_ejemplo4.png" >'+
+        '<p>Seguimos  con la tabla 4</p>'+
+        '<img id="tabla56" src="images/Ejemplo4/tabla4_ejemplo4.png" >',
+
+        '<p class="texto-negritas">Paso No.5 </p>' +
+        '<p>Generamos la tabla 5. </p>'+
+        '<p>Objetivo: Colocar a los implicantes primos (combinaciones que ya no pueden ser combinadas con otras; se denotan por no tener una marca * en las tablas 3 y 4), en una sola tabla para obtener a los productos.</p>'+
+        '<img id="tabla57" src="images/Ejemplo4/tabla5_ejemplo4.png" >'+
+        '<p>NOTA: Si en la representación binaria (abcd) tenemos para el producto:</p>'+
+        '<p>- no hay variable representativa</p>'+
+        '<p>0 la variable está negada</p>'+
+        '<p>1 la variable no está negada</p>'+
+
+        '<div class="cuadro">' +
+        '<p>FINALMENTE OBTENEMOS LA MINIMIZACIÓN DADA POR LA SUMA DE LOS PRODUCTOS, resultado que podemos representar como:</p>' +
+        '<p>f(a,b,c,d) = ∑_m(0,2,4,6,8,11,15) = a\'d\'+b\'c\'d\'+acd</p>' +
+        '<p>O simplemente: </p>' +
+        '<p>f(a,b,c,d) = a\'d\'+b\'c\'d\'+acd</p>'+
+        '</div>'
+      ];
+
+      const pasosContenidoSeccion5 = [
+      '<p class="texto-negritas">Ejemplo 5</p>' +
+      '<p>Minimice la siguiente función booleana por medio del método de minimización de Quine-McCluskey.</p>'+
+        '<p>f(a,b,c,d)= ∑<sub>m</sub>(0,2,4,6,9)</p>'+
+        '<p>Solución:</p>'+
+        '<p class="texto-negritas">Paso No. 1</p>' +
+        '<p>Generamos la primera tabla. Objetivo: Obtener las formas binarias de los minitérminos y la cantidad de 1’s en ellos.</p>'+
+        '<img id="tabla58" src="images/Ejemplo5/tabla1_ejemplo5.png" >'+
+        '<div class="cuadro">' +
+        '<p>•	Columna minitérminos: llenamos conforme a los minitérminos que nos muestra la función en este caso: 0, 2, 4, 6 y 9</p>' +
+        '<p>•	Columna 1´s: es el número de 1´s que contiene el número binario de ese minitérmino</p>' +
+        '<p>•	abcd: el número binario que representa ese minitérmino  </p>' +
+        '</div>',
+
+        '<p class="texto-negritas">Paso No.2 </p>' +
+        '<p>Generamos la segunda tabla. </p>'+
+        '<p>Objetivo: Reagrupar a los minitérminos con base en la cantidad de 1’s en su representación binaria.</p>'+
+        '<img id="tabla59" src="images/Ejemplo5/tabla2_1_ejemplo5.png" >'+
+        '<p>Marcamos con un * en la Tabla 1, para indicar que hemos agregado los minitérminos en la Tabla 2.</p>'+
+        '<img id="tabla60" src="images/Ejemplo5/tabla2_2_ejemplo5.png" >'+
+        '<img id="tabla61" src="images/Ejemplo5/tabla2_3_ejemplo5.png" >'+
+        '<img id="tabla62" src="images/Ejemplo5/tabla2_4_ejemplo5.png" >'+
+        '<img id="tabla63" src="images/Ejemplo5/tabla2_5_ejemplo5.png" >',
+
+        '<p class="texto-negritas">Paso No.3 </p>' +
+        '<p>Generamos una tercera tabla. Objetivo: Realizar la primera combinación con minitérminos. </p>'+
+        '<p>**Pasamos a la parte de realización de combinaciones con los minitérminos.</p>'+
+        '<p>Combinaciones:</p>'+
+        '<p>1.	Buscamos en la representación binaria de los minitérminos, los que difieren en solo una variable (la que sea) para poder realizar una combinación con apoyo en la tabla 2.</p>'+
+        '<p>2.	Empezamos con el primer caso en la cantidad de 1’s con la siguiente cantidad. En este caso los que tienen cero 1’s con los que tiene un solo 1.</p>'+
+        '<p>3.	Al combinar a los minitérminos, si tenemos:</p>'+
+        '<p>0 y 0 será 0</p>'+
+        '<p>1 y 1 será 1</p>'+
+        '<p>0 y 1 será -</p>'+
+        '<img id="tabla64" src="images/Ejemplo5/ex1_ejemplo5.png" >'+
+        '<p>Seguimos con la tabla 3<p>'+
+        '<img id="tabla65" src="images/Ejemplo5/tabla3_1_ejemplo5.png" >'+
+        '<img id="tabla66" src="images/Ejemplo5/tabla3_2_ejemplo5.png" >'+
+        '<img id="tabla67" src="images/Ejemplo5/tabla3_3_ejemplo5.png" >'+
+        '<img id="tabla68" src="images/Ejemplo5/tabla3_4_ejemplo5.png" >'+
+        '<p>NOTA IMPORTANTE: 9 es el único minitérmino que no se combina con otra cosa, y queda sin marca *, así que se toma como un implicante primo que va directo a la tabla 5. </p>',
+
+        '<p class="texto-negritas">Paso No.4 </p>' +
+        '<p>Generamos una cuarta tabla. Objetivo: Realizar la segunda combinación con las combinaciones de la tabla anterior.</p>'+
+        '<img id="tabla69" src="images/Ejemplo5/ex2_ejemplo5.png" >'+
+        '<p>Seguimos  con la tabla 4</p>'+
+        '<img id="tabla70" src="images/Ejemplo5/tabla4_ejemplo5.png" >',
+
+        '<p class="texto-negritas">Paso No.5 </p>' +
+        '<p>Generamos la tabla 5. </p>'+
+        '<p>Objetivo: Colocar a los implicantes primos (combinaciones que ya no pueden ser combinadas con otras; se denotan por no tener una marca * en las tablas 3 y 4), en una sola tabla para obtener a los productos.</p>'+
+        '<img id="tabla71" src="images/Ejemplo4/tabla5_ejemplo4.png" >'+
+        '<p>NOTA: Si en la representación binaria (abcd) tenemos para el producto:</p>'+
+        '<p>- no hay variable representativa</p>'+
+        '<p>0 la variable está negada</p>'+
+        '<p>1 la variable no está negada</p>'+
+
+        '<div class="cuadro">' +
+        '<p>FINALMENTE OBTENEMOS LA MINIMIZACIÓN DADA POR LA SUMA DE LOS PRODUCTOS, resultado que podemos representar como:</p>' +
+        '<p>f(a,b,c,d) = ∑_m(0,2,4,6,9) = a\'d\'+ab\'c\'d</p>' +
+        '<p>O simplemente: </p>' +
+        '<p>f(a,b,c,d) = a\'d\'+ab\'c\'d</p>'+
+        '</div>'
+      ];
+        
+      const pasosContenidoSeccion6 = [
+      '<p class="texto-negritas">Ejemplo 6</p>' +
+      '<p>Minimice la siguiente función booleana por medio del método de minimización de Quine-McCluskey.</p>'+
+        '<p>f(a,b,c,d)= ∑<sub>m</sub>(1,2,5,8,9,10,13)</p>'+
+        '<p>Solución:</p>'+
+        '<p class="texto-negritas">Paso No. 1</p>' +
+        '<p>Generamos la primera tabla. Objetivo: Obtener las formas binarias de los minitérminos y la cantidad de 1’s en ellos.</p>'+
+        '<img id="tabla72" src="images/Ejemplo6/tabla1_ejemplo6.png" >'+
+        '<div class="cuadro">' +
+        '<p>•	Columna minitérminos: llenamos conforme a los minitérminos que nos muestra la función en este caso: 1,2,5,8,9,10 y 13</p>' +
+        '<p>•	Columna 1´s: es el número de 1´s que contiene el número binario de ese minitérmino</p>' +
+        '<p>•	abcd: el número binario que representa ese minitérmino  </p>' +
+        '</div>',
+
+        '<p class="texto-negritas">Paso No.2 </p>' +
+        '<p>Generamos la segunda tabla. </p>'+
+        '<p>Objetivo: Reagrupar a los minitérminos con base en la cantidad de 1’s en su representación binaria.</p>'+
+        '<img id="tabla73" src="images/Ejemplo6/tabla2_1_ejemplo6.png" >'+
+        '<p>Marcamos con un * en la Tabla 1, para indicar que hemos agregado los minitérminos en la Tabla 2.</p>'+
+        '<img id="tabla74" src="images/Ejemplo6/tabla2_2_ejemplo6.png" >'+
+        '<img id="tabla75" src="images/Ejemplo6/tabla2_3_ejemplo6.png" >'+
+        '<img id="tabla76" src="images/Ejemplo6/tabla2_4_ejemplo6.png" >'+
+        '<img id="tabla77" src="images/Ejemplo6/tabla2_5_ejemplo6.png" >'+
+        '<img id="tabla78" src="images/Ejemplo6/tabla2_6_ejemplo6.png" >'+
+        '<img id="tabla79" src="images/Ejemplo6/tabla2_7_ejemplo6.png" >',
+
+        '<p class="texto-negritas">Paso No.3 </p>' +
+        '<p>Generamos una tercera tabla. Objetivo: Realizar la primera combinación con minitérminos. </p>'+
+        '<p>**Pasamos a la parte de realización de combinaciones con los minitérminos.</p>'+
+        '<p>Combinaciones:</p>'+
+        '<p>1.	Buscamos en la representación binaria de los minitérminos, los que difieren en solo una variable (la que sea) para poder realizar una combinación con apoyo en la tabla 2.</p>'+
+        '<p>2.	Empezamos con el primer caso en la cantidad de 1’s con la siguiente cantidad. En este caso los que tienen cero 1’s con los que tiene un solo 1.</p>'+
+        '<p>3.	Al combinar a los minitérminos, si tenemos:</p>'+
+        '<p>0 y 0 será 0</p>'+
+        '<p>1 y 1 será 1</p>'+
+        '<p>0 y 1 será -</p>'+
+        '<img id="tabla80" src="images/Ejemplo6/ex1_ejemplo6.png" >'+
+        '<p>Seguimos con la tabla 3<p>'+
+        '<img id="tabla81" src="images/Ejemplo6/tabla3_1_ejemplo6.png" >'+
+        '<img id="tabla82" src="images/Ejemplo6/tabla3_2_ejemplo6.png" >'+
+        '<img id="tabla83" src="images/Ejemplo6/tabla3_3_ejemplo6.png" >'+
+        '<img id="tabla84" src="images/Ejemplo6/tabla3_4_ejemplo6.png" >'+
+        '<img id="tabla85" src="images/Ejemplo6/tabla3_5_ejemplo6.png" >'+
+        '<img id="tabla86" src="images/Ejemplo6/tabla3_6_ejemplo6.png" >',
+
+        '<p class="texto-negritas">Paso No.4 </p>' +
+        '<p>Generamos una cuarta tabla. Objetivo: Realizar la segunda combinación con las combinaciones de la tabla anterior.</p>'+
+        '<img id="tabla87" src="images/Ejemplo6/ex2_ejemplo6.png" >'+
+        '<p>Seguimos  con la tabla 4</p>'+
+        '<img id="tabla88" src="images/Ejemplo6/tabla4_ejemplo6.png" >',
+
+        '<p class="texto-negritas">Paso No.5 </p>' +
+        '<p>Generamos la tabla 5. </p>'+
+        '<p>Objetivo: Colocar a los implicantes primos (combinaciones que ya no pueden ser combinadas con otras; se denotan por no tener una marca * en las tablas 3 y 4), en una sola tabla para obtener a los productos.</p>'+
+        '<img id="tabla89" src="images/Ejemplo6/tabla5_ejemplo6.png" >'+
+        '<p>*(8,10) ya están considerados en otras combinaciones, por lo tanto no es necesaria.</p>'+
+        '<p>NOTA: Si en la representación binaria (abcd) tenemos para el producto:</p>'+
+        '<p>- no hay variable representativa</p>'+
+        '<p>0 la variable está negada</p>'+
+        '<p>1 la variable no está negada</p>'+
+        
+        '<div class="cuadro">' +
+        '<p>FINALMENTE OBTENEMOS LA MINIMIZACIÓN DADA POR LA SUMA DE LOS PRODUCTOS, resultado que podemos representar como:</p>' +
+        '<p>f(a,b,c,d)= ∑_m(1,2,5,8,9,10,13) = c\'d+b\'cd\'+ab\'c\'+bc\'d</p>' +
+        '<p>O simplemente: </p>' +
+        '<p>f(a,b,c,d) = c\'d+b\'cd\'+ab\'c\'+bc\'d</p>'+
+        '</div>'
+      ];
+
+      const pasosContenidoSeccion7 = [
+      '<p class="texto-negritas">Ejemplo 7</p>' +
+      '<p>Minimice la siguiente función booleana por medio del método de minimización de Quine-McCluskey.</p>'+
+        '<p>f(a,b,c,d)= ∑<sub>m</sub>(0,2,3,7,9)</p>'+
+        '<p>Solución:</p>'+
+        '<p class="texto-negritas">Paso No. 1</p>' +
+        '<p>Generamos la primera tabla. Objetivo: Obtener las formas binarias de los minitérminos y la cantidad de 1’s en ellos.</p>'+
+        '<img id="tabla90" src="images/Ejemplo7/tabla1_ejemplo7.png" >'+
+        '<div class="cuadro">' +
+        '<p>• Columna minitérminos: llenamos conforme a los minitérminos que nos muestra la función en este caso: 0,2,3,7 y 9</p>' +
+        '<p>•	Columna 1´s: es el número de 1´s que contiene el número binario de ese minitérmino</p>' +
+        '<p>•	abcd: el número binario que representa ese minitérmino  </p>' +
+        '</div>',
+
+        '<p class="texto-negritas">Paso No.2 </p>' +
+        '<p>Generamos la segunda tabla. </p>'+
+        '<p>Objetivo: Reagrupar a los minitérminos con base en la cantidad de 1’s en su representación binaria.</p>'+
+        '<img id="tabla73" src="images/Ejemplo7/tabla2_1_ejemplo7.png" >'+
+        '<p>Marcamos con un * en la Tabla 1, para indicar que hemos agregado los minitérminos en la Tabla 2.</p>'+
+        '<img id="tabla91" src="images/Ejemplo7/tabla2_2_ejemplo7.png" >'+
+        '<img id="tabla92" src="images/Ejemplo7/tabla2_3_ejemplo7.png" >'+
+        '<img id="tabla93" src="images/Ejemplo7/tabla2_4_ejemplo7.png" >'+
+        '<img id="tabla94" src="images/Ejemplo7/tabla2_5_ejemplo7.png" >',
+
+        '<p class="texto-negritas">Paso No.3 </p>' +
+        '<p>Generamos una tercera tabla. Objetivo: Realizar la primera combinación con minitérminos. </p>'+
+        '<p>**Pasamos a la parte de realización de combinaciones con los minitérminos.</p>'+
+        '<p>Combinaciones:</p>'+
+        '<p>1.	Buscamos en la representación binaria de los minitérminos, los que difieren en solo una variable (la que sea) para poder realizar una combinación con apoyo en la tabla 2.</p>'+
+        '<p>2.	Empezamos con el primer caso en la cantidad de 1’s con la siguiente cantidad. En este caso los que tienen cero 1’s con los que tiene un solo 1.</p>'+
+        '<p>3.	Al combinar a los minitérminos, si tenemos:</p>'+
+        '<p>0 y 0 será 0</p>'+
+        '<p>1 y 1 será 1</p>'+
+        '<p>0 y 1 será -</p>'+
+        '<img id="tabla80" src="images/Ejemplo7/ex1_ejemplo7.png" >'+
+        '<p>Seguimos con la tabla 3<p>'+
+        '<img id="tabla95" src="images/Ejemplo7/tabla3_1_ejemplo7.png" >'+
+        '<img id="tabla96" src="images/Ejemplo7/tabla3_2_ejemplo7.png" >'+
+        '<img id="tabla97" src="images/Ejemplo7/tabla3_3_ejemplo7.png" >',
+
+        '<p class="texto-negritas">Paso No.4 </p>' +
+        '<p>Generamos una cuarta tabla. Objetivo: Realizar la segunda combinación con las combinaciones de la tabla anterior.</p>'+
+        '<img id="tabla99" src="images/Ejemplo7/tabla4_ejemplo7.png" >'+
+        '<p>NO SE PUEDEN HACER COMBINACIONES DE LAS COMBINACIONES QUE TENEMOS.</p>',
+
+        '<p class="texto-negritas">Paso No.5 </p>' +
+        '<p>Generamos la tabla 5. </p>'+
+        '<p>Objetivo: Colocar a los implicantes primos (combinaciones que ya no pueden ser combinadas con otras; se denotan por no tener una marca * en las tablas 3 y 4), en una sola tabla para obtener a los productos.</p>'+
+        '<img id="tabla100" src="images/Ejemplo7/tabla5_ejemplo7.png" >'+
+        '<p>*(2,3) ya están considerados en otras combinaciones, por lo tanto no es necesaria.</p>'+
+        '<p>NOTA: Si en la representación binaria (abcd) tenemos para el producto:</p>'+
+        '<p>- no hay variable representativa</p>'+
+        '<p>0 la variable está negada</p>'+
+        '<p>1 la variable no está negada</p>'+
+        
+        '<div class="cuadro">' +
+        '<p>FINALMENTE OBTENEMOS LA MINIMIZACIÓN DADA POR LA SUMA DE LOS PRODUCTOS, resultado que podemos representar como:</p>' +
+        '<p>f(a,b,c,d)= ∑_m(0,2,3,7,9) = a\'b\'d\'+a\'cd+ab\'c\'d</p>' +
+        '<p>O simplemente: </p>' +
+        '<p>f(a,b,c,d) = a\'b\'d\'+a\'cd+ab\'c\'d</p>'+
+        '</div>'
+      ];
+      
+      const pasosContenidoSeccion8 = [
+      '<p class="texto-negritas">Ejemplo 8</p>' +
+      '<p>Minimice la siguiente función booleana por medio del método de minimización de Quine-McCluskey.</p>'+
+        '<p>f(a,b,c,d)= ∑<sub>m</sub>(4,5,7,13)</p>'+
+        '<p>Solución:</p>'+
+        '<p class="texto-negritas">Paso No. 1</p>' +
+        '<p>Generamos la primera tabla. Objetivo: Obtener las formas binarias de los minitérminos y la cantidad de 1’s en ellos.</p>'+
+        '<img id="tabla101" src="images/Ejemplo8/tabla1_ejemplo8.png" >'+
+        '<div class="cuadro">' +
+        '<p>•	Columna minitérminos: llenamos conforme a los minitérminos que nos muestra la función en este caso: 4,5,7 y 13</p>' +
+        '<p>•	Columna 1´s: es el número de 1´s que contiene el número binario de ese minitérmino</p>' +
+        '<p>•	abcd: el número binario que representa ese minitérmino  </p>' +
+        '</div>',
+
+        '<p class="texto-negritas">Paso No.2 </p>' +
+        '<p>Generamos la segunda tabla. </p>'+
+        '<p>Objetivo: Reagrupar a los minitérminos con base en la cantidad de 1’s en su representación binaria.</p>'+
+        '<img id="tabla102" src="images/Ejemplo8/tabla2_1_ejemplo8.png" >'+
+        '<p>Marcamos con un * en la Tabla 1, para indicar que hemos agregado los minitérminos en la Tabla 2.</p>'+
+        '<img id="tabla103" src="images/Ejemplo8/tabla2_2_ejemplo8.png" >'+
+        '<img id="tabla104" src="images/Ejemplo8/tabla2_3_ejemplo8.png" >'+
+        '<img id="tabla105" src="images/Ejemplo8/tabla2_4_ejemplo8.png" >',
+
+        '<p class="texto-negritas">Paso No.3 </p>' +
+        '<p>Generamos una tercera tabla. Objetivo: Realizar la primera combinación con minitérminos. </p>'+
+        '<p>**Pasamos a la parte de realización de combinaciones con los minitérminos.</p>'+
+        '<p>Combinaciones:</p>'+
+        '<p>1.	Buscamos en la representación binaria de los minitérminos, los que difieren en solo una variable (la que sea) para poder realizar una combinación con apoyo en la tabla 2.</p>'+
+        '<p>2.	Empezamos con el primer caso en la cantidad de 1’s con la siguiente cantidad. En este caso los que tienen cero 1’s con los que tiene un solo 1.</p>'+
+        '<p>3.	Al combinar a los minitérminos, si tenemos:</p>'+
+        '<p>0 y 0 será 0</p>'+
+        '<p>1 y 1 será 1</p>'+
+        '<p>0 y 1 será -</p>'+
+        '<img id="tabla106" src="images/Ejemplo8/ex1_ejemplo8.png" >'+
+        '<p>Seguimos con la tabla 3<p>'+
+        '<img id="tabla107" src="images/Ejemplo8/tabla3_1_ejemplo8.png" >'+
+        '<img id="tabla108" src="images/Ejemplo8/tabla3_2_ejemplo8.png" >'+
+        '<img id="tabla109" src="images/Ejemplo8/tabla3_3_ejemplo8.png" >',
+
+        '<p class="texto-negritas">Paso No.4 </p>' +
+        '<p>Generamos una cuarta tabla. Objetivo: Realizar la segunda combinación con las combinaciones de la tabla anterior.</p>'+
+        '<img id="tabla110" src="images/Ejemplo8/tabla4_ejemplo8.png" >'+
+        '<p>NO SE PUEDEN HACER COMBINACIONES DE LAS COMBINACIONES QUE TENEMOS. Vamos directo a la tabla 5.</p>',
+
+        '<p class="texto-negritas">Paso No.5 </p>' +
+        '<p>Generamos la tabla 5. </p>'+
+        '<p>Objetivo: Colocar a los implicantes primos (combinaciones que ya no pueden ser combinadas con otras; se denotan por no tener una marca * en las tablas 3 y 4), en una sola tabla para obtener a los productos.</p>'+
+        '<img id="tabla111" src="images/Ejemplo8/tabla5_ejemplo8.png" >'+
+        '<p>NOTA: Si en la representación binaria (abcd) tenemos para el producto:</p>'+
+        '<p>- no hay variable representativa</p>'+
+        '<p>0 la variable está negada</p>'+
+        '<p>1 la variable no está negada</p>'+
+
+        '<div class="cuadro">' +
+        '<p>FINALMENTE OBTENEMOS LA MINIMIZACIÓN DADA POR LA SUMA DE LOS PRODUCTOS, resultado que podemos representar como:</p>' +
+        '<p>f(a,b,c,d) = ∑_m(4,5,7,13) = ab\'c+a\'bd+bc\'d</p>' +
+        '<p>O simplemente: </p>' +
+        '<p>f(a,b,c,d) = ab\'c+a\'bd+bc\'d</p>'+
+        '</div>'
+      ];
+
+      const pasosContenidoSeccion9 = [
+      '<p class="texto-negritas">Ejemplo 9</p>' +
+      '<p>Minimice la siguiente función booleana por medio del método de minimización de Quine-McCluskey.</p>'+
+        '<p>f(a,b,c,d)= ∑<sub>m</sub>(0,2,4,5,6)</p>'+
+        '<p>Solución:</p>'+
+        '<p class="texto-negritas">Paso No. 1</p>' +
+        '<p>Generamos la primera tabla. Objetivo: Obtener las formas binarias de los minitérminos y la cantidad de 1’s en ellos.</p>'+
+        '<img id="tabla112" src="images/Ejemplo9/tabla1_ejemplo9.png" >'+
+        '<div class="cuadro">' +
+        '<p>•	Columna minitérminos: llenamos conforme a los minitérminos que nos muestra la función en este caso: 0,2,4,5 y 6</p>' +
+        '<p>•	Columna 1´s: es el número de 1´s que contiene el número binario de ese minitérmino</p>' +
+        '<p>•	abcd: el número binario que representa ese minitérmino  </p>' +
+        '</div>',
+
+        '<p class="texto-negritas">Paso No.2 </p>' +
+        '<p>Generamos la segunda tabla. </p>'+
+        '<p>Objetivo: Reagrupar a los minitérminos con base en la cantidad de 1’s en su representación binaria.</p>'+
+        '<img id="tabla113" src="images/Ejemplo9/tabla2_1_ejemplo9.png" >'+
+        '<p>Marcamos con un * en la Tabla 1, para indicar que hemos agregado los minitérminos en la Tabla 2.</p>'+
+        '<img id="tabla114" src="images/Ejemplo9/tabla2_2_ejemplo9.png" >'+
+        '<img id="tabla115" src="images/Ejemplo9/tabla2_3_ejemplo9.png" >'+
+        '<img id="tabla116" src="images/Ejemplo9/tabla2_4_ejemplo9.png" >'+
+        '<img id="tabla117" src="images/Ejemplo9/tabla2_5_ejemplo9.png" >',
+
+        '<p class="texto-negritas">Paso No.3 </p>' +
+        '<p>Generamos una tercera tabla. Objetivo: Realizar la primera combinación con minitérminos. </p>'+
+        '<p>**Pasamos a la parte de realización de combinaciones con los minitérminos.</p>'+
+        '<p>Combinaciones:</p>'+
+        '<p>1.	Buscamos en la representación binaria de los minitérminos, los que difieren en solo una variable (la que sea) para poder realizar una combinación con apoyo en la tabla 2.</p>'+
+        '<p>2.	Empezamos con el primer caso en la cantidad de 1’s con la siguiente cantidad. En este caso los que tienen cero 1’s con los que tiene un solo 1.</p>'+
+        '<p>3.	Al combinar a los minitérminos, si tenemos:</p>'+
+        '<p>0 y 0 será 0</p>'+
+        '<p>1 y 1 será 1</p>'+
+        '<p>0 y 1 será -</p>'+
+        '<img id="tabla118" src="images/Ejemplo9/ex1_ejemplo9.png" >'+
+        '<p>Seguimos con la tabla 3<p>'+
+        '<img id="tabla119" src="images/Ejemplo9/tabla3_1_ejemplo9.png" >'+
+        '<img id="tabla120" src="images/Ejemplo9/tabla3_2_ejemplo9.png" >'+
+        '<img id="tabla121" src="images/Ejemplo9/tabla3_3_ejemplo9.png" >',
+
+        '<p class="texto-negritas">Paso No.4 </p>' +
+        '<p>Generamos una cuarta tabla. Objetivo: Realizar la segunda combinación con las combinaciones de la tabla anterior.</p>'+
+        '<img id="tabla122" src="images/Ejemplo9/tabla4_ejemplo9.png" >',
+
+        '<p class="texto-negritas">Paso No.5 </p>' +
+        '<p>Generamos la tabla 5. </p>'+
+        '<p>Objetivo: Colocar a los implicantes primos (combinaciones que ya no pueden ser combinadas con otras; se denotan por no tener una marca * en las tablas 3 y 4), en una sola tabla para obtener a los productos.</p>'+
+        '<img id="tabla123" src="images/Ejemplo9/tabla5_ejemplo9.png" >'+
+        '<p>NOTA: Si en la representación binaria (abcd) tenemos para el producto:</p>'+
+        '<p>- no hay variable representativa</p>'+
+        '<p>0 la variable está negada</p>'+
+        '<p>1 la variable no está negada</p>'+
+
+        '<div class="cuadro">' +
+        '<p>FINALMENTE OBTENEMOS LA MINIMIZACIÓN DADA POR LA SUMA DE LOS PRODUCTOS, resultado que podemos representar como:</p>' +
+        '<p>f(a,b,c,d) = ∑_m(0,2,3,7,9) = a\'d\'+a\'bc\'</p>'+
+        '<p>O simplemente: </p>' +
+        '<p>f(a,b,c,d) = a\'d\'+a\'bc\'</p>'+
+        '</div>'
+      ];
+      
+      const pasosContenidoSeccion10 = [
+      '<p class="texto-negritas">Ejemplo 10</p>' +
+      '<p>Minimice la siguiente función booleana por medio del método de minimización de Quine-McCluskey.</p>'+
+        '<p>f(a,b,c,d)= ∑<sub>m</sub>(1,3,5,7,9)</p>'+
+        '<p>Solución:</p>'+
+        '<p class="texto-negritas">Paso No. 1</p>' +
+        '<p>Generamos la primera tabla. Objetivo: Obtener las formas binarias de los minitérminos y la cantidad de 1’s en ellos.</p>'+
+        '<img id="tabla124" src="images/Ejemplo10/tabla1_ejemplo10.png" >'+
+        '<div class="cuadro">' +
+        '<p>•	Columna minitérminos: llenamos conforme a los minitérminos que nos muestra la función en este caso: 1,3,5,7 y 9</p>' +
+        '<p>•	Columna 1´s: es el número de 1´s que contiene el número binario de ese minitérmino</p>' +
+        '<p>•	abcd: el número binario que representa ese minitérmino  </p>' +
+        '</div>',
+
+        '<p class="texto-negritas">Paso No.2 </p>' +
+        '<p>Generamos la segunda tabla. </p>'+
+        '<p>Objetivo: Reagrupar a los minitérminos con base en la cantidad de 1’s en su representación binaria.</p>'+
+        '<img id="tabla125" src="images/Ejemplo10/tabla2_1_ejemplo10.png" >'+
+        '<p>Marcamos con un * en la Tabla 1, para indicar que hemos agregado los minitérminos en la Tabla 2.</p>'+
+        '<img id="tabla126" src="images/Ejemplo10/tabla2_2_ejemplo10.png" >'+
+        '<img id="tabla127" src="images/Ejemplo10/tabla2_3_ejemplo10.png" >'+
+        '<img id="tabla128" src="images/Ejemplo10/tabla2_4_ejemplo10.png" >'+
+        '<img id="tabla129" src="images/Ejemplo10/tabla2_5_ejemplo10.png" >',
+
+        '<p class="texto-negritas">Paso No.3 </p>' +
+        '<p>Generamos una tercera tabla. Objetivo: Realizar la primera combinación con minitérminos. </p>'+
+        '<p>**Pasamos a la parte de realización de combinaciones con los minitérminos.</p>'+
+        '<p>Combinaciones:</p>'+
+        '<p>1.	Buscamos en la representación binaria de los minitérminos, los que difieren en solo una variable (la que sea) para poder realizar una combinación con apoyo en la tabla 2.</p>'+
+        '<p>2.	Empezamos con el primer caso en la cantidad de 1’s con la siguiente cantidad. En este caso los que tienen cero 1’s con los que tiene un solo 1.</p>'+
+        '<p>3.	Al combinar a los minitérminos, si tenemos:</p>'+
+        '<p>0 y 0 será 0</p>'+
+        '<p>1 y 1 será 1</p>'+
+        '<p>0 y 1 será -</p>'+
+        '<img id="tabla130" src="images/Ejemplo10/ex1_ejemplo10.png" >'+
+        '<p>Seguimos con la tabla 3<p>'+
+        '<img id="tabla131" src="images/Ejemplo10/tabla3_1_ejemplo10.png" >'+
+        '<img id="tabla132" src="images/Ejemplo10/tabla3_2_ejemplo10.png" >'+
+        '<img id="tabla133" src="images/Ejemplo10/tabla3_3_ejemplo10.png" >'+
+        '<img id="tabla134" src="images/Ejemplo10/tabla3_4_ejemplo10.png" >',
+
+        '<p class="texto-negritas">Paso No.4 </p>' +
+        '<p>Generamos una cuarta tabla. Objetivo: Realizar la segunda combinación con las combinaciones de la tabla anterior.</p>'+
+        '<img id="tabla135" src="images/Ejemplo10/ex2_ejemplo10.png" >'+
+        '<p>Seguimos con la tabla 4</p>'+
+        '<img id="tabla136" src="images/Ejemplo10/tabla4_ejemplo10.png" >',
+
+        '<p class="texto-negritas">Paso No.5 </p>' +
+        '<p>Generamos la tabla 5. </p>'+
+        '<p>Objetivo: Colocar a los implicantes primos (combinaciones que ya no pueden ser combinadas con otras; se denotan por no tener una marca * en las tablas 3 y 4), en una sola tabla para obtener a los productos.</p>'+
+        '<img id="tabla137" src="images/Ejemplo10/tabla5_ejemplo10.png" >'+
+        '<p>NOTA: Si en la representación binaria (abcd) tenemos para el producto:</p>'+
+        '<p>- no hay variable representativa</p>'+
+        '<p>0 la variable está negada</p>'+
+        '<p>1 la variable no está negada</p>'+
+
+        '<div class="cuadro">' +
+        '<p>FINALMENTE OBTENEMOS LA MINIMIZACIÓN DADA POR LA SUMA DE LOS PRODUCTOS, resultado que podemos representar como:</p>' +
+        '<p>f(a,b,c,d) = ∑_m(1,3,5,7,9) = a\'d+b\'c\'d\'</p>'+
+        '<p>O simplemente: </p>' +
+        '<p>f(a,b,c,d) = a\'d+b\'c\'d</p>'+
+        '</div>'
+      ];
+
+      let pasoActualSeccion1 = 0;
+      let pasoActualSeccion2 = 0;
+      let pasoActualSeccion3 = 0;
+      let pasoActualSeccion4 = 0;
+      let pasoActualSeccion5 = 0;
+      let pasoActualSeccion6 = 0;
+      let pasoActualSeccion7 = 0;
+      let pasoActualSeccion8 = 0;
+      let pasoActualSeccion9 = 0;
+      let pasoActualSeccion10 = 0;
+
+      // Mostrar el contenido del primer paso al cargar la página
+      mostrarPaso();
+      mostrarPaso2();
+      mostrarPaso3();
+      mostrarPaso4();
+      mostrarPaso5();
+      mostrarPaso6();
+      mostrarPaso7();
+      mostrarPaso8();
+      mostrarPaso9();
+      mostrarPaso10();
+
+      function mostrarPaso() {
+        document.getElementById('pasos').innerHTML = pasosContenidoSeccion1[pasoActualSeccion1];
+      }
+
+      function mostrarPaso2() {
+        document.getElementById('pasos2').innerHTML = pasosContenidoSeccion2[pasoActualSeccion2];
+      }
+
+      function mostrarPaso3() {
+        document.getElementById('pasos3').innerHTML = pasosContenidoSeccion3[pasoActualSeccion3];
+      }
+
+      function mostrarPaso4() {
+        document.getElementById('pasos4').innerHTML = pasosContenidoSeccion4[pasoActualSeccion4];
+      }
+
+      function mostrarPaso5() {
+        document.getElementById('pasos5').innerHTML = pasosContenidoSeccion5[pasoActualSeccion5];
+      }
+
+      function mostrarPaso6() {
+        document.getElementById('pasos6').innerHTML = pasosContenidoSeccion6[pasoActualSeccion6];
+      }
+
+      function mostrarPaso7() {
+        document.getElementById('pasos7').innerHTML = pasosContenidoSeccion7[pasoActualSeccion7];
+      }
+
+      function mostrarPaso8() {
+        document.getElementById('pasos8').innerHTML = pasosContenidoSeccion8[pasoActualSeccion8];
+      }
+
+      function mostrarPaso9() {
+        document.getElementById('pasos9').innerHTML = pasosContenidoSeccion9[pasoActualSeccion9];
+      }
+
+      function mostrarPaso10() {
+        document.getElementById('pasos10').innerHTML = pasosContenidoSeccion10[pasoActualSeccion10];
+      }
+
+      window.mostrarPaso = function (direccion) {
+  if (direccion === 'anterior' && pasoActualSeccion1 > 0) {
+    pasoActualSeccion1--;
+  } else if (direccion === 'siguiente' && pasoActualSeccion1 < pasosContenidoSeccion1.length - 1) {
+    pasoActualSeccion1++;
+  } else if (direccion === 'anterior' && pasoActualSeccion1 === 0) {
+    alert('No se puede retroceder más.');
+    return;
+  } else if (direccion === 'siguiente' && pasoActualSeccion1 === pasosContenidoSeccion1.length - 1) {
+    alert('No se puede avanzar más.');
+    return;
+  }
+
+  // Aquí puedes llamar a la función que muestra el contenido del paso actual
+  mostrarPaso(); // Asegúrate de llamar a la función correcta para mostrar el paso actual
+};
+
+
+window.mostrarPaso2 = function (direccion) {
+  if (direccion === 'anterior' && pasoActualSeccion2 > 0) {
+    pasoActualSeccion2--;
+  } else if (direccion === 'siguiente' && pasoActualSeccion2 < pasosContenidoSeccion2.length - 1) {
+    pasoActualSeccion2++;
+  } else if (direccion === 'anterior' && pasoActualSeccion2 === 0) {
+    alert('No se puede retroceder más.');
+    return;
+  } else if (direccion === 'siguiente' && pasoActualSeccion2 === pasosContenidoSeccion2.length - 1) {
+    alert('No se puede avanzar más.');
+    return;
+  }
+
+  // Aquí puedes llamar a la función que muestra el contenido del paso actual
+  mostrarPaso2(); // Asegúrate de llamar a la función correcta para mostrar el paso actual
+};
+
+
+window.mostrarPaso3 = function (direccion) {
+  if (direccion === 'anterior' && pasoActualSeccion3 > 0) {
+    pasoActualSeccion3--;
+  } else if (direccion === 'siguiente' && pasoActualSeccion3 < pasosContenidoSeccion3.length - 1) {
+    pasoActualSeccion3++;
+  } else if (direccion === 'anterior' && pasoActualSeccion3 === 0) {
+    alert('No se puede retroceder más.');
+    return;
+  } else if (direccion === 'siguiente' && pasoActualSeccion3 === pasosContenidoSeccion3.length - 1) {
+    alert('No se puede avanzar más.');
+    return;
+  }
+
+  // Aquí puedes llamar a la función que muestra el contenido del paso actual
+  mostrarPaso3(); // Asegúrate de llamar a la función correcta para mostrar el paso actual
+};
+
+
+window.mostrarPaso4 = function (direccion) {
+  if (direccion === 'anterior' && pasoActualSeccion4 > 0) {
+    pasoActualSeccion4--;
+  } else if (direccion === 'siguiente' && pasoActualSeccion4 < pasosContenidoSeccion4.length - 1) {
+    pasoActualSeccion4++;
+  } else if (direccion === 'anterior' && pasoActualSeccion4 === 0) {
+    alert('No se puede retroceder más.');
+    return;
+  } else if (direccion === 'siguiente' && pasoActualSeccion4 === pasosContenidoSeccion4.length - 1) {
+    alert('No se puede avanzar más.');
+    return;
+  }
+
+  // Aquí puedes llamar a la función que muestra el contenido del paso actual
+  mostrarPaso4(); // Asegúrate de llamar a la función correcta para mostrar el paso actual
+};
+
+
+window.mostrarPaso5 = function (direccion) {
+  if (direccion === 'anterior' && pasoActualSeccion5 > 0) {
+    pasoActualSeccion5--;
+  } else if (direccion === 'siguiente' && pasoActualSeccion5 < pasosContenidoSeccion5.length - 1) {
+    pasoActualSeccion5++;
+  } else if (direccion === 'anterior' && pasoActualSeccion5 === 0) {
+    alert('No se puede retroceder más.');
+    return;
+  } else if (direccion === 'siguiente' && pasoActualSeccion5 === pasosContenidoSeccion5.length - 1) {
+    alert('No se puede avanzar más.');
+    return;
+  }
+
+  // Aquí puedes llamar a la función que muestra el contenido del paso actual
+  mostrarPaso5(); // Asegúrate de llamar a la función correcta para mostrar el paso actual
+};
+
+
+window.mostrarPaso6 = function (direccion) {
+  if (direccion === 'anterior' && pasoActualSeccion6 > 0) {
+    pasoActualSeccion6--;
+  } else if (direccion === 'siguiente' && pasoActualSeccion6 < pasosContenidoSeccion6.length - 1) {
+    pasoActualSeccion6++;
+  } else if (direccion === 'anterior' && pasoActualSeccion6 === 0) {
+    alert('No se puede retroceder más.');
+    return;
+  } else if (direccion === 'siguiente' && pasoActualSeccion6 === pasosContenidoSeccion6.length - 1) {
+    alert('No se puede avanzar más.');
+    return;
+  }
+
+  // Aquí puedes llamar a la función que muestra el contenido del paso actual
+  mostrarPaso6(); // Asegúrate de llamar a la función correcta para mostrar el paso actual
+};
+
+window.mostrarPaso7 = function (direccion) {
+  if (direccion === 'anterior' && pasoActualSeccion7 > 0) {
+    pasoActualSeccion7--;
+  } else if (direccion === 'siguiente' && pasoActualSeccion7 < pasosContenidoSeccion7.length - 1) {
+    pasoActualSeccion7++;
+  } else if (direccion === 'anterior' && pasoActualSeccion7 === 0) {
+    alert('No se puede retroceder más.');
+    return;
+  } else if (direccion === 'siguiente' && pasoActualSeccion7 === pasosContenidoSeccion7.length - 1) {
+    alert('No se puede avanzar más.');
+    return;
+  }
+
+  // Aquí puedes llamar a la función que muestra el contenido del paso actual
+  mostrarPaso7(); // Asegúrate de llamar a la función correcta para mostrar el paso actual
+};
+
+
+window.mostrarPaso8 = function (direccion) {
+  if (direccion === 'anterior' && pasoActualSeccion8 > 0) {
+    pasoActualSeccion8--;
+  } else if (direccion === 'siguiente' && pasoActualSeccion8 < pasosContenidoSeccion8.length - 1) {
+    pasoActualSeccion8++;
+  } else if (direccion === 'anterior' && pasoActualSeccion8 === 0) {
+    alert('No se puede retroceder más.');
+    return;
+  } else if (direccion === 'siguiente' && pasoActualSeccion8 === pasosContenidoSeccion8.length - 1) {
+    alert('No se puede avanzar más.');
+    return;
+  }
+
+  // Aquí puedes llamar a la función que muestra el contenido del paso actual
+  mostrarPaso8(); // Asegúrate de llamar a la función correcta para mostrar el paso actual
+};
+
+window.mostrarPaso9 = function (direccion) {
+  if (direccion === 'anterior' && pasoActualSeccion9 > 0) {
+    pasoActualSeccion9--;
+  } else if (direccion === 'siguiente' && pasoActualSeccion9 < pasosContenidoSeccion9.length - 1) {
+    pasoActualSeccion9++;
+  } else if (direccion === 'anterior' && pasoActualSeccion9 === 0) {
+    alert('No se puede retroceder más.');
+    return;
+  } else if (direccion === 'siguiente' && pasoActualSeccion9 === pasosContenidoSeccion9.length - 1) {
+    alert('No se puede avanzar más.');
+    return;
+  }
+
+  // Aquí puedes llamar a la función que muestra el contenido del paso actual
+  mostrarPaso9(); // Asegúrate de llamar a la función correcta para mostrar el paso actual
+};
+
+
+window.mostrarPaso10 = function (direccion) {
+  if (direccion === 'anterior' && pasoActualSeccion10 > 0) {
+    pasoActualSeccion10--;
+  } else if (direccion === 'siguiente' && pasoActualSeccion10 < pasosContenidoSeccion10.length - 1) {
+    pasoActualSeccion10++;
+  } else if (direccion === 'anterior' && pasoActualSeccion10 === 0) {
+    alert('No se puede retroceder más.');
+    return;
+  } else if (direccion === 'siguiente' && pasoActualSeccion10 === pasosContenidoSeccion10.length - 1) {
+    alert('No se puede avanzar más.');
+    return;
+  }
+
+  // Aquí puedes llamar a la función que muestra el contenido del paso actual
+  mostrarPaso10(); // Asegúrate de llamar a la función correcta para mostrar el paso actual
+};
+
+
+    }
+    );
+
+    function mostrarSeccion(direccion) {
+  const seccionesContenido = document.querySelectorAll('.contenido-seccion');
+  let indiceVisible = -1;
+
+  seccionesContenido.forEach(function (seccion, indice) {
+    if (seccion.classList.contains('contenido-visible')) {
+      indiceVisible = indice;
+    }
+  });
+
+  if (direccion === 'anterior' && indiceVisible > 0) {
+    // Ocultar la ventana de la sección anterior al retroceder
+    seccionesContenido[indiceVisible].classList.remove('contenido-visible');
+    seccionesContenido[indiceVisible - 1].classList.add('contenido-visible');
+  } else if (direccion === 'siguiente' && indiceVisible < seccionesContenido.length - 1) {
+    // Mostrar la ventana de la siguiente sección al avanzar
+    seccionesContenido[indiceVisible].classList.remove('contenido-visible');
+    seccionesContenido[indiceVisible + 1].classList.add('contenido-visible');
+  } else if (direccion === 'anterior' && indiceVisible === 0) {
+    // No se puede retroceder más, mostrar un cuadro de diálogo
+    alert('No se puede retroceder más, debido a que es el ejemplo número 1');
+  } else if (direccion === 'siguiente' && indiceVisible === seccionesContenido.length - 1) {
+    // No se puede avanzar más, mostrar un cuadro de diálogo
+    alert('No se puede avanzar más, debido a que este es el ejemplo número 10 y último de este tutorial');
+  }
+}
+
+
+
+
+  </script>
+</body>
+
+</html>

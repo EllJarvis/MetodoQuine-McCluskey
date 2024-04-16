@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="js_sf/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="js_sf/contTabla.css" rel="stylesheet">
+        <script src="js_sf/jquery.js"></script>
+        <script src="js_sf/bootstrap.min.js"></script>
+        <script src="js_sf/contTabla.js"></script>
+        <script src="js_sf/quine.js"></script>
+        <body background="media/css/temas/tema10.jpg"></body>
+    </head>
+
+    <body class="container default_body_style">
+        <section class="section">
+            <div>
+                <h1 class="title"><font color = "black"><br>Método de Quine-McCluskey</font></h1>
+                <h2><small><Font color = "black">Instrucciones de uso:</Font></small></h2>
+                <p><font color = "black">- Paso 1. Seleccione el número de variables, el mínimo permitido es de 2 y el máximo es de 7; para aumentar el número de variables presione el botón "+", para disminuir el número de variables presione el botón "-". Esto se realiza en el apartado "Cantidad de variables (a,b,c,...)".</font></p>
+                <p><font color = "black">- Paso 2. Seleccionar los minitérminos. Es importante leer las notas que se encuentran en el apartado "Selección de minitérminos".</font></p>
+                <p><font color = "black">- Paso 3. Después de seleccionar los minitérminos presionar el botón "Simplificar" para que se realice la minimización. Al presionar dicho botón se mostrará la solución y el resultado.</font></p>
+                <p><font color = "black">- En caso de querer ingresar una nueva expresión presionar el botón "Nueva expresión", el cuál se encuentra a continuación:</font></p>
+                <button class="button is-rounded is-link new_expression">Nueva expresión</button>
+                <hr>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><small><Font color = "black">Cantidad de variables (a,b,c,...)</Font></small></h2>
+            <div class="btn-group-xs" style="margin-bottom: 1em;">
+                <span style="margin-right: 1em;">
+                    Cantidad de variables:
+                    <a id="btn_minus" class="btn btn-success"><span class="glyphicon glyphicon-minus"></span></a>
+                    <span id="label_num" class="btn disabled"></span>
+                    <a id="btn_plus" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span></a>
+                </span><br>
+                <hr>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><small><Font color = "black">Selección de minitérminos</Font></small></h2>
+            <p><font color = "black">Notas:</font></p>
+            <p><font color = "black">- La tabla se conforma de 3 apartados principales: forma binaria de los minitérminos (a,b,c,...), función (f) y forma decimal de los minitérminos (0,1,2,...).</font></p>
+            <p><font color = "black">- Si desea agregar un minitérmino a la sumatoria presione el botón "1"</font></p>
+            <p><font color = "black">- Para saber si un minitérmino se agregó a la sumatoria de manera correcta el botón "1" se debe de encontrar de color verde.</font></p>
+            <p><font color = "black">- Si se selecciona de manera errónea un minitérmino se deberá de hacer la selección de minitérminos desde cero.</font></p>
+            <div class="panel-body" style="text-align: center;">
+                <div class="panel panel-default" style="overflow: auto">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr id="truth_table_head" class="bg-success">
+                            </tr>
+                        </thead>
+                        <tbody id="truth_table_body">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btn-group-vertical col-lg-4">
+                    <a id="btn_quine_mac_klask" class="btn btn-default">Simplificar</a>
+                    <p hidden><input type="checkbox" id="latexMode"/></p>
+                </div>
+            </div>
+            <hr>
+        </section>
+
+        <section class="section">
+            <h2><small><Font color = "black">Solución</Font></small></h2>
+            <div id="result_text" style="min-height: 100px; font-size: 14px; padding: 7px; overflow: auto;"></div>
+        </section>
+        
+
+        <script type="text/javascript">
+            (function (d, w, c) {
+                (w[c] = w[c] || []).push(function () {
+                    try {
+                        w.yaCounter30557997 = new Ya.Metrika({id: 30557997,
+                            webvisor: true,
+                            clickmap: true,
+                            trackLinks: true,
+                            accurateTrackBounce: true});
+                    } catch (e) {
+                    }
+                });
+
+                var n = d.getElementsByTagName("script")[0],
+                        s = d.createElement("script"),
+                        f = function () {
+                            n.parentNode.insertBefore(s, n);
+                        };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else {
+                    f();
+                }
+            })(document, window, "yandex_metrika_callbacks");
+        </script>
+    </body>
+</html>
+
+<!--
+    Código del método de Quine-McCluskey se baso de:
+    https://mmedia1.fi-b.unam.mx/media/materials/t465/index.html
+    https://github.com/rodrigofrancisco/Quine-McCluskey      
+    https://github.com/Joel2B/Quine-McCluskey/blob/master/script.js
+    https://gist.github.com/ysangkok/5707171
+    http://booleanbot.com/
+-->
