@@ -182,19 +182,13 @@
     <h1>Métodos de minimización</h1>
     <h5>
         <div align="justify">
-            <p>Ahora estamos teniendo un enfoque centrado a la búsqueda de representaciones algebraicas de lógica
-                para
-                representar desde circuitos hasta estructuras condicionales que por ende nos deja en un entorno de
-                lógica con razón de dos respuestas en las que encontramos a verdadero (1) y falso (0). Por lo que 
-                encontraremos sistemas algebraicos en los que tendremos expresiones extensas y que complicarían la 
-                comprensión de sí mismas para uno.
-                Por lo tanto, nos quedamos en la necesidad de recurrir a métodos que logren reducir las expresiones
-                en álgebra de Boole, que ahora; por comodidad, vamos a llamar funciones booleanas.</p>
-            <p>Para nuestro curso hemos visto distintas formas de reducir una función booleana, siendo estas las más
-                destacadas de las que se encuentran en el entorno computacional, en el área de lógica se refiere,
-                las
-                cuales
-                serían reducciones por:
+            <p>
+                La representación de circuitos o estructuras condicionales nos dejan un entorno de lógica con razón de dos respuestas en las que encontramos verdadero y falso.
+                Es por esto que, al igual que en otros sistemas algebraicos, en la álgebra booleana tendremos expresiones extensas que harían más complejo su interpretación.
+            </p>
+            <p>
+                Es por esto que se tuvo la necesidad de recurrir a métodos que logren reducir dichas expresiones o funciones booleanas. En el entorno computacional,
+                en el área de la lógica, los métodos más destacados para la simplificación de funciones booleanas son:
             </p>
         </div>
     </h5>
@@ -207,16 +201,13 @@
         <h2>Método Algebraico</h2>
         <h5>
             <div align="justify">
-                <p>Para este método es a primera instancia, fácil de interpretar por su semejanza con los sistemas
-                    algebraicos a
-                    los que estamos acostumbrados. Sin embargo, aquí iremos aplicando los postulados (o propiedades)
-                    del álgebra
-                    de Boole. </p>
-                <p>Bueno, las propiedades que se estuvieron manejando durante el curso para la aplicación de este
-                    método se
-                    encuentran en la tabla VI que adjuntamos a continuación, en donde estamos manejando las
-                    representaciones de la
-                    conjunción, disyunción y negación en su forma ( · , + y ‘, respectivamente).</p>
+                <p>
+                    El método algebraico implica utilizar o aplicar las propiedades y/o postulados del álgebra de Boole,
+                    por lo que, su interpretación resulta bastante sencilla, puesto que, tiene semejanza con los sistemas algebraicos que conocemos.
+                    La principal desventaja de este método es que no es sistemático, es decir, no hay un algoritmo paso a paso a seguir.
+                    A continuación, enlistamos las propiedades que se manejan en el álgebra de Boole.
+                </p>
+                
                 <img id="t1" src="images/t1.png" alt="Descripción de la imagen">
                 <p></p>
                 <p>Tabla de propiedades del método algebraico basado en las tablas de lógica proposicional proporcionadas por el profesor
@@ -229,11 +220,15 @@
         <h2>Mapas de Karnaugh</h2>
         <h5>
             <div align="justify">
-                <p>Este método surge de tratar de agrupar a los términos de interés sin aplicar de forma directa el
-                    desarrollo
-                    algebraico que ofrece el método anterior. Y esto se constituye de desarrollar de forma gráfica
-                    la tabla de
-                    verdad de una función lógica. </p>
+                <p>
+                    El método de mapas de Karnaugh fue inventado en 1953 por Maurice Karnaugh, es un diagrama utilizado para simplificar funciones algebraicas en forma canónica.
+                    A partir de la tabla de Karnaugh se puede obtener una forma canónica mínima con el mínimo número de términos, en comparación con el álgebra booleana,
+                    la reducción de funciones lógicas resulta más sencilla.
+                </p>
+                <p>
+                    Este método surge de tratar de agrupar a los términos de interés sin aplicar de forma directa el desarrollo algebraico que ofrece el método anterior.
+                    Y esto se constituye de desarrollar de forma gráfica la tabla de verdad de una función lógica.
+                </p>
 
                 <p><p><p></p><img id="t2" src="images/MapaKarnaugh_Chico.png" alt="Descripción de la imagen"><p>
                     <div align='center'>
@@ -246,7 +241,7 @@
                     términos canónicos adyacentes pueden ser agrupados para hacer de forma más sencilla la
                     agrupación de los
                     elementos.</p>
-                <p>Su algoritmo, en pocas palabras, consiste en:</p>
+                <p>El algoritmo consiste en:</p>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Se escribe un 1 en los cuadros que tiene un número de los que forman la 
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sumatoria de la función.</p>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Se forman los grupos de minitérminos que se consideran vecinos (tienen un
