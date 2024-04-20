@@ -27,7 +27,7 @@ function cuestionario(){
         document.write("<tr><td><input type='radio' name='p"+i+"' value=2 onclick='respuesta("+n+","+2+")'>"+preguntas[i].respuesta3+"</td><td><input type='radio' name='p"+i+"' value=3 onclick='respuesta("+n+","+3+")'>"+preguntas[i].respuesta4+"</td>");
         document.write('</tr></tbody></table></div><br><br>');
         correctas[n] = preguntas[i].res;
-        preguntas[i].state = false;
+        preguntas[i].state = true;
     }
 };
 
