@@ -81,7 +81,6 @@ preguntas[46] = new Pregunta("(47)¿Qué propiedad del álgebra booleana implica
 preguntas[47] = new Pregunta("(48)¿Qué método de minimización en el álgebra booleana utiliza una tabla de verdad para encontrar los términos implicantes primos?","Método de Quine-McCluskey","Método algebraico","Método de interpolación","Método de regresión lineal", 0, true);
 preguntas[48] = new Pregunta("(49)¿Qué característica del álgebra booleana facilita la simplificación y análisis de expresiones lógicas complejas?","La ausencia de operaciones de suma y multiplicación","El uso exclusivo de números binarios","La aplicación de la propiedad asociativa","La utilización de métodos de minimización", 3, true);
 preguntas[49] = new Pregunta("(50)¿Cuál es el objetivo principal de los métodos de minimización en el álgebra booleana?","Aumentar la complejidad de las expresiones booleanas","Simplificar expresiones lógicas complejas","Agregar términos adicionales a las funciones booleanas","Reducir el número de variables en las funciones lógicas", 3, true);
-preguntas []
 
 cuestionario();
 
