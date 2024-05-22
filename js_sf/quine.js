@@ -1,5 +1,5 @@
 $(function () {
-    var MAX_VAR_NUM = 7;
+    var MAX_VAR_NUM = 14;
     var MIN_VAR_NUM = 2;
     var varNum = 4;
 
@@ -10,7 +10,8 @@ $(function () {
     var labelVarNums = $('#label_num');
     var labelFuncNums = $('#label_num_f');
     var resultText = $('#result_text');
-    let letras = ["a", "b", "c", "d", "e", "f", "g", "h", "i"];
+    let letras = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
 
     genTable();
 
