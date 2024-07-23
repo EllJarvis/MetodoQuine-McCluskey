@@ -217,7 +217,7 @@
                     A continuación, enlistamos las propiedades que se manejan en el álgebra de Boole.
                 </p>
                 
-                <img id="t1" src="images/t1.png" alt="Descripción de la imagen">
+                <img id="t1" src="images/t1.png" width="638px" height="822px" alt="Tabla 2">
                 <p></p>
                 <p>Tabla de propiedades del método algebraico basado en las tablas de lógica proposicional proporcionadas por el profesor
                     Ing. Orlando Zaldívar Zamorategui. </p>
@@ -273,32 +273,39 @@
         <h2> Método de minimización de Quine-McCluskey</h2>
         <h5>
             <div align="justify">
-                <p>Fue desarrollado por Willard Van Orman Quine y Edward J. McCluskey. El Algoritmo Quine–McCluskey es un método tabular que se utiliza para 
-                    minimizar funciones booleanas siguiendo un algoritmo, similar a la utilización del mapa de Karnaugh. La ventaja que tiene sobre los mapas 
-                    de Karnaugh es que podemos utilizar cuantas variables queramos, puesto que, el método evita que hagamos demasiados mapas de Karnaugh. Cabe 
-                    mencionar que este método resulta tener mayor eficacia en cuanto a su implementación en el lenguaje computacional. 
-                    El metodo de Quine-McCluskey permite un manejo amplio en las funciones booleanas, pudiendo manejar casos con:
-                    
-                </p>
+                <p>Fue desarrollado por:</p>
 
-                <img src="images/WillardVanOrmanQuine.jpeg" width="200" height="280px" alt="Uni&oacute;n">
+                <img src="images/WillardVanOrmanQuine.jpg" width="300" height="300px" alt="Uni&oacute;n">
                 <div align='center'>
                     <p><p>Willard Van Orman Quine (1908-2000)</p>
                 </div>
-
-		        <p></p><img src="images/EdwardJMcCluskey.jpeg" width="300" height="451px" alt="Uni&oacute;n">
+                
+                <p></p><img src="images/EdwardJMcCluskey.jpeg" width="300" height="451px" alt="Uni&oacute;n">
                 <div align='center'>
                     <p><p>Edward J. McCluskey (1929-2016)<p></p>
-                </div>                
-                
+                </div>
 
+                <p>El Algoritmo Quine–McCluskey es un método tabular que se utiliza para 
+                    minimizar funciones booleanas siguiendo un algoritmo, similar a la utilización del mapa de Karnaugh. La ventaja que tiene sobre los mapas 
+                    de Karnaugh es que podemos utilizar cuantas variables queramos, puesto que, el método evita que hagamos demasiados mapas de Karnaugh. Cabe 
+                    mencionar que este método resulta tener mayor eficacia en cuanto a su implementación en el lenguaje computacional.
+                </p>
+
+                <p>El metodo de Quine-McCluskey permite un manejo amplio en las funciones booleanas, pudiendo manejar casos con:</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  - 2 variables: f(a, b)</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  - 3 variables: f(a, b, c)</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  - 4 variables: f(a, b, c, d)</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  - 5 variables: f(a, b, c, d, e)</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  - n variables: f(a, b, c, d, e, n)</p>
+                
+                <p>Para poder obtener las funciones simplificadas es necesario seguir una serie de pasos en 2 etapas distintas:</p>
+
+                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Etapa 1: Obtener a los "Primos Implicantes" mediante la agrupación y combinación de minitérminos iterativa.</h5>
+                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Etapa 2: .</h5>
+                
                 <p>A considerar que la función booleana como: </p>
                 <img id="t2" src="images/FuncionBooleanaPartes.png" alt="Descripción de la imagen">
-                <p>Se nos puede presentar una función booleana de:</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  - 2 variables: f(a,b)</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  - 3 variables: f(a,b,c)</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  - 4 variables: f(a,b,c,d)</p>
-                <p> O hasta 7 variables: f(a,b,c,d,e,f,g)</p>
+
                 <p>Y eso nos va a indicar que las representaciones binarias de los minitérminos podrían llegar a
                     representarse dependiendo de la cantidad de variables presentes en la función boolena:</p>
                 <img id="t2" src="images/tablaMiniterminos.png" alt="Descripción de la imagen">

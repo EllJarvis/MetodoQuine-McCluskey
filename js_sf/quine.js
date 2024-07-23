@@ -1,5 +1,5 @@
 $(function () {
-    var MAX_VAR_NUM = 7;
+    var MAX_VAR_NUM = 20;
     var MIN_VAR_NUM = 2;
     var varNum = 4;
 
@@ -10,7 +10,7 @@ $(function () {
     var labelVarNums = $('#label_num');
     var labelFuncNums = $('#label_num_f');
     var resultText = $('#result_text');
-    let letras = ["a", "b", "c", "d", "e", "f", "g", "h", "i"];
+    let letras = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t"];
 
     genTable();
 
@@ -42,7 +42,6 @@ $(function () {
         }
     });
 
-
     $("#btn_quine_mac_klask").click(function () {
         calcQuineMacKlask($("#latexMode").get(0).checked);
     });
@@ -64,7 +63,6 @@ $(function () {
         }
         head.append('<td class="col-lg-2"><div class="text-center">Minitérmino</div></td>');
         
-
         var states = [{text: "1"}];
         var body = $("#truth_table_body").empty();
         var rows = Math.pow(2, varNum);
